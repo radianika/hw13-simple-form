@@ -39,7 +39,7 @@ gulp.task('js:build', function () {
 gulp.task('browser-sync', function () { 
 	browserSync({ 
 		server: { 
-			baseDir: ''
+			baseDir: 'src'
 		},
 		notify: false 
 	});
@@ -47,8 +47,9 @@ gulp.task('browser-sync', function () {
 
 gulp.task('watch', ['browser-sync', 'style:build'], function () {
 	gulp.watch('src/styles/*.scss', ['style:build']);
+	gulp.watch('src/styles/*.css', ['style:build']);
 	gulp.watch('src/*.html', browserSync.reload);
-	gulp.watch('srk/scripts/*.js', browserSync.reload);
+	gulp.watch('src/scripts/*.js', browserSync.reload);
 });
 
 gulp.task('build', [

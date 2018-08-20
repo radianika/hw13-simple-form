@@ -1,216 +1,337 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+}
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+	font-size: 2em;
+	margin: 0.67em 0;
+}
 
 a {
-  background-color: transparent; }
+	background-color: transparent;
+}
 
 abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; }
+	border-bottom: none;
+	text-decoration: underline;
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
 
 img {
-  border-style: none; }
+	border-style: none;
+}
 
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15; }
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+}
 
 button,
 input {
-  overflow: visible; }
+	overflow: visible;
+}
 
 button,
 select {
-  text-transform: none; }
+	text-transform: none;
+}
 
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
+	-webkit-appearance: button;
+}
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
+	border-style: none;
+	padding: 0;
+}
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+	outline: 1px dotted ButtonText;
+}
 
 legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal; }
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
 
 progress {
-  vertical-align: baseline; }
+	vertical-align: baseline;
+}
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
+	box-sizing: border-box;
+	padding: 0;
+}
 
 details {
-  display: block; }
+	display: block;
+}
 
 summary {
-  display: list-item; }
+	display: list-item;
+}
 
 template {
-  display: none; }
+	display: none;
+}
 
 [hidden] {
-  display: none; }
+	display: none;
+}
 
 body {
-  font-family: Arial; }
+	font-family: Arial;
+}
 
 section.login-modal {
-  display: flex;
-  flex-direction: column;
-  width: 844px;
-  height: 500px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  align-items: center;
-  background: #ffffff;
-  box-shadow: 0 3px 3px -2px #bcbcbc;
-  border-top: 2px solid #e62b1e; }
-  section.login-modal .close-modal {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: #c2c2c2;
-    border: none;
-    background-color: none;
-    font-size: 20px;
-    cursor: pointer; }
-  section.login-modal header {
-    padding-top: 25px;
-    padding-bottom: 25px; }
-    section.login-modal header h1 {
-      font-size: 31px;
-      padding: 0;
-      margin: 0;
-      font-weight: 550; }
-  section.login-modal footer {
-    padding-top: 35px;
-    padding-bottom: 35px; }
-    section.login-modal footer p {
-      font-size: 18px;
-      color: #666666; }
-      section.login-modal footer p a {
-        color: #000000;
-        font-weight: bold; }
+	display: flex;
+	flex-direction: column;
+	width: 844px;
+	height: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	align-items: center;
+	background: #ffffff;
+	box-shadow: 0 3px 3px -2px #bcbcbc;
+	border-top: 2px solid #e62b1e;
+}
+
+section.login-modal .close-modal {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #c2c2c2;
+	border: none;
+	background-color: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+section.login-modal header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+section.login-modal header h1 {
+	font-size: 31px;
+	padding: 0;
+	margin: 0;
+	font-weight: 550;
+}
+
+section.login-modal footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+section.login-modal footer p {
+	font-size: 18px;
+	color: #666666;
+}
+
+section.login-modal footer p a {
+	color: #000000;
+	font-weight: bold;
+}
 
 .login-modal-content {
-  background: #f3f3f3;
-  padding: 40px 60px;
-  display: flex;
-  width: 100%;
-  height: 330px;
-  justify-content: space-between; }
-  .login-modal-content div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 60px; }
-    .login-modal-content div .google {
-      background-color: #dd5342;
-      white-space: nowrap;
-      letter-spacing: 1px;
-      font-size: 13px;
-      border-radius: 3px;
-      color: #ffffff;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 13px 65px 13px 94px;
-      width: 100%;
-      position: relative; }
-      .login-modal-content div .google i {
-        font-size: 23px;
-        position: absolute;
-        top: 10px;
-        left: 15px; }
-    .login-modal-content div .facebook {
-      background-color: #3e5b96;
-      white-space: nowrap;
-      letter-spacing: 1px;
-      font-size: 13px;
-      border-radius: 3px;
-      color: #ffffff;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 13px 65px 13px 94px;
-      width: 100%;
-      position: relative;
-      margin-bottom: 20px; }
-      .login-modal-content div .facebook i {
-        font-size: 23px;
-        position: absolute;
-        top: 10px;
-        left: 15px; }
-  .login-modal-content form {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 59px;
-    border-left: 1px solid #cfcfcf;
-    justify-content: space-between;
-    letter-spacing: 1px; }
-    .login-modal-content form label:not(:last-of-type) {
-      margin-bottom: 23px; }
-    .login-modal-content form input[type="text"],
-    .login-modal-content form input[type="password"] {
-      width: 100%;
-      height: 40px;
-      border: 1px solid #dddddd;
-      border-radius: 2px;
-      padding-bottom: 8px; }
-    .login-modal-content form p.login {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline; }
-      .login-modal-content form p.login a {
-        color: #252525; }
-    .login-modal-content form .login-btn {
-      background-color: #252525;
-      white-space: nowrap;
-      letter-spacing: 1px;
-      font-size: 13px;
-      border-radius: 3px;
-      color: #ffffff;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 13px 32px 13px 32px; }
+	background: #f3f3f3;
+	padding: 40px 60px;
+	display: flex;
+	width: 100%;
+	height: 330px;
+	justify-content: space-between;
+}
+
+.login-modal-content div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-right: 60px;
+}
+
+.login-modal-content div .google {
+	background-color: #dd5342;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	font-size: 13px;
+	border-radius: 3px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 13px 65px 13px 94px;
+	width: 100%;
+	position: relative;
+}
+
+.login-modal-content div .google i {
+	font-size: 23px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+.login-modal-content div .facebook {
+	background-color: #3e5b96;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	font-size: 13px;
+	border-radius: 3px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 13px 65px 13px 94px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.login-modal-content div .facebook i {
+	font-size: 23px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+.login-modal-content form {
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 59px;
+	border-left: 1px solid #cfcfcf;
+	justify-content: space-between;
+	letter-spacing: 1px;
+}
+
+.login-modal-content form label:not(:last-of-type) {
+	margin-bottom: 23px;
+}
+
+.login-modal-content form input[type="text"],
+.login-modal-content form input[type="password"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	padding-bottom: 8px;
+}
+
+.login-modal-content form p.login {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.login-modal-content form p.login a {
+	color: #252525;
+}
+
+.login-modal-content form .login-btn {
+	background-color: #252525;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	font-size: 13px;
+	border-radius: 3px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 13px 32px 13px 32px;
+}
+
+@media only screen and (max-width: 991.98px) {
+	section.login-modal {
+		width: 100%;
+	}
+	button.btn {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.btn {
+		padding: 13px 5% 13px 20% !important;
+	}
+	.login-modal-content div i {
+		font-size: 18px;
+		left: 5px !important;
+	}
+	.login-modal-content form p.login {
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 616px) {
+	section.login-modal {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	section.login-modal header {
+		padding: 24px;
+	}
+	div.login-modal-content {
+		flex-direction: column;
+		padding: 24px 10% 0;
+		height: auto;
+	}
+	.login-modal-content form label p {
+		margin-bottom: 6px;
+	}
+	.login-modal-content form label {
+		margin-bottom: 22px;
+	}
+	.login-modal-content form {
+		width: 100%;
+		border-left: none;
+		border-bottom: 1px solid #cfcfcf;
+		padding: 0 0 21px 0;
+		order: 0;
+	}
+	.login-modal-content div {
+		width: 100%;
+		padding-right: 0;
+		order: 1;
+		padding: 25px 0;
+	}
+	.login-modal-content form p.login {
+		align-items: baseline;
+	}
+}

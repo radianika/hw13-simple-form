@@ -1,0 +1,62 @@
+@media only screen and (max-width: 991.98px) {
+	section.login-modal {
+		width: 100%;
+	}
+	button.btn {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.btn {
+		padding: 13px 5% 13px 20% !important;
+	}
+	.login-modal-content div i {
+		font-size: 18px;
+		left: 5px !important;
+	}
+	.login-modal-content form p.login {
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 616px) {
+	section.login-modal {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	section.login-modal header {
+		padding: 24px;
+	}
+	div.login-modal-content {
+		flex-direction: column;
+		padding: 24px 10% 0;
+		height: auto;
+	}
+	.login-modal-content form label p {
+		margin-bottom: 6px;
+	}
+	.login-modal-content form label {
+		margin-bottom: 22px;
+	}
+	.login-modal-content form {
+		width: 100%;
+		border-left: none;
+		border-bottom: 1px solid #cfcfcf;
+		padding: 0 0 21px 0;
+		order: 0;
+	}
+	.login-modal-content div {
+		width: 100%;
+		padding-right: 0;
+		order: 1;
+		padding: 25px 0;
+	}
+	.login-modal-content form p.login {
+		align-items: baseline;
+	}
+}
