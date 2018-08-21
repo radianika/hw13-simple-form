@@ -154,7 +154,9 @@ section.login-modal {
       color: #ffffff;
       text-decoration: none;
       cursor: pointer;
-      padding: 13px 65px 13px 94px;
+      line-height: 40px;
+      padding-left: 20px;
+      text-align: center;
       width: 100%;
       position: relative; }
       .login-modal-content div .google:hover {
@@ -173,7 +175,9 @@ section.login-modal {
       color: #ffffff;
       text-decoration: none;
       cursor: pointer;
-      padding: 13px 65px 13px 94px;
+      line-height: 40px;
+      padding-left: 20px;
+      text-align: center;
       width: 100%;
       position: relative;
       margin-bottom: 20px; }
@@ -219,7 +223,10 @@ section.login-modal {
       color: #ffffff;
       text-decoration: none;
       cursor: pointer;
-      padding: 13px 32px 13px 32px; }
+      line-height: 40px;
+      padding-left: 32px;
+      text-align: center;
+      padding-right: 32px; }
       .login-modal-content form .login-btn:hover {
         background-color: #4b4b4b; }
 

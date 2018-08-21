@@ -14,7 +14,7 @@ $login-btn:#252525;
 	flex-direction: column;
 }
 
-@mixin button($color, $right, $left) {
+@mixin button($color, $left) {
 	background-color: $color;
 	white-space: nowrap;
 	letter-spacing: 1px;
@@ -23,7 +23,9 @@ $login-btn:#252525;
 	color: #ffffff;
 	text-decoration: none;
 	cursor: pointer;
-	padding: 13px $right 13px $left;
+	line-height: 40px;
+	padding-left: $left;
+	text-align: center;
 	&:hover{
 		@if $color == $facebook-btn{
 			background-color: darken($color, 4%);
@@ -113,11 +115,11 @@ section.login-modal {
 		width: 50%;
 		padding-right: 60px;
 		.google {
-			@include button($google-btn, 65px, 94px);
+			@include button($google-btn, 20px);
 			@include social-button;
 		}
 		.facebook {
-			@include button($facebook-btn, 65px, 94px);
+			@include button($facebook-btn, 20px);
 			@include social-button;
 			margin-bottom: 20px;
 		}
@@ -149,7 +151,8 @@ section.login-modal {
 			}
 		}
 		.login-btn {
-			@include button($login-btn, 32px, 32px);
+			@include button($login-btn, 32px);
+			padding-right: 32px;
 		}
 	}
 }
