@@ -117,7 +117,8 @@ section.login-modal {
     cursor: pointer; }
   section.login-modal header {
     padding-top: 25px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    background-color: #ffffff; }
     section.login-modal header h1 {
       font-size: 31px;
       padding: 0;
@@ -125,7 +126,8 @@ section.login-modal {
       font-weight: 550; }
   section.login-modal footer {
     padding-top: 35px;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    background-color: #ffffff; }
     section.login-modal footer p {
       font-size: 18px;
       color: #666666; }
