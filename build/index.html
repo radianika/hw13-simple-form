@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="css/main.css" rel="stylesheet">
+	<script src="scripts/main.js"></script>
 </head>
 <body>
 	<section class="login-modal">
@@ -17,10 +18,13 @@
 			<div class="login-social-btn">
 				<a class="btn facebook" href="#"><i class="fab fa-facebook-f"></i>Log in with Facebook</a>
 				<a class="btn google" href="#"><i class="fab fa-google-plus-g"></i>Log in with Google +</a></div>
-			<form><label><p class="input-name">Login</p><input type="text"></label>
-				<label><p class="input-name">Password</p><input type="password"></label>
-				<label><input type="checkbox" che=cked> Remember me</label>
-				<p class="login"><button class="login-btn">Log in</button><a href="#">Need help logging in?</a></p>
+			<form action="#" method="get">
+				<label><p class="input-name">Login</p>
+				<input type="text" id="log"></label>
+				<label><p class="input-name">Password</p>
+				<input type="password" id="pass"></label>
+				<label><input type="checkbox" checked> Remember me</label>
+				<p class="login"><button id="login-btn" class="login-btn">Log in</button><a href="#">Need help logging in?</a></p>
 			</form>
 		</div>
 		<footer>

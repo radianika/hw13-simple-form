@@ -19,11 +19,22 @@ $login-btn:#252525;
 	white-space: nowrap;
 	letter-spacing: 1px;
 	font-size: 13px;
-	border-radius: 3px;
+	border-radius: 5px;
 	color: #ffffff;
 	text-decoration: none;
 	cursor: pointer;
 	padding: 13px $right 13px $left;
+	&:hover{
+		@if $color == $facebook-btn{
+			background-color: darken($color, 4%);
+	}
+				@if $color == $google-btn{
+			background-color: darken($color, 2%);
+	}
+				@if $color == $login-btn{
+			background-color: lighten($color, 15%);
+	}
+	}
 }
 
 @mixin social-button {
@@ -131,7 +142,10 @@ section.login-modal {
 			justify-content: space-between;
 			align-items: baseline;
 			a {
-				color: #252525;
+				color: #656565;
+				&:hover{
+					color: darken(#656565, 20%);
+				}
 			}
 		}
 		.login-btn {

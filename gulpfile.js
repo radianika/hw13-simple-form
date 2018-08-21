@@ -39,7 +39,7 @@ gulp.task('js:build', function () {
 gulp.task('browser-sync', function () { 
 	browserSync({ 
 		server: { 
-			baseDir: 'src'
+			baseDir: 'build'
 		},
 		notify: false 
 	});
