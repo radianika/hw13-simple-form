@@ -8,9 +8,6 @@
 	}
 }
 @media only screen and (max-width: 767.98px) {
-	.btn {
-		padding: 13px 5% 13px 20% !important;
-	}
 	.login-modal-content div i {
 		font-size: 18px;
 		left: 5px !important;
